@@ -1,0 +1,10 @@
+{
+  "title": "Sketch App",
+  "cells": [
+    {
+      "type": "code",
+      "language": "php",
+      "data": "defaults write -app ‘sketch’ ApplePersistence -bool no"
+    }
+  ]
+}

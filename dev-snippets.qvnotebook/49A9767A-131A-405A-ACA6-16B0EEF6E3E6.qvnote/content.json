@@ -1,0 +1,32 @@
+{
+  "title": "Git Guide",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div>changing origin</div>"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "git remote rm origin\ngit remote add origin <link>"
+    },
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgb(221, 221, 221);\">setting origin</span>"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "git remote set-url origin git://new.url.here"
+    },
+    {
+      "type": "text",
+      "data": "adding origin on fresh repo"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "git init\ngit remote add origin git@bitbucket.org:symph/typeface.git"
+    }
+  ]
+}

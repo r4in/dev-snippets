@@ -1,0 +1,122 @@
+{
+  "title": "HomeBrew Guide",
+  "cells": [
+    {
+      "type": "text",
+      "data": "Install Homebrew"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "$ ruby -e \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)\""
+    },
+    {
+      "type": "text",
+      "data": "One thing we need to do is tell the system to use programs installed by Homebrew (in/usr/local/bin) rather than the OS default if it exists. We do this by adding /usr/local/binto your $PATH environment variable:"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "$ echo 'export PATH=\"/usr/local/bin:$PATH\"' >> ~/.bash_profile"
+    },
+    {
+      "type": "text",
+      "data": "Install Package"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "brew install git"
+    },
+    {
+      "type": "text",
+      "data": "Upgrade Package"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "brew upgrade git"
+    },
+    {
+      "type": "text",
+      "data": "Unlink Package"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "brew unlink git"
+    },
+    {
+      "type": "text",
+      "data": "Switch Package Versions"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "brew list --versions git\nbrew switch git 2.5.0\nbrew info git"
+    },
+    {
+      "type": "text",
+      "data": "Remove Old Version"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "brew cleanup git"
+    },
+    {
+      "type": "text",
+      "data": "Edit Formulae"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "brew edit git"
+    },
+    {
+      "type": "text",
+      "data": "Update Brew"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "brew update"
+    },
+    {
+      "type": "text",
+      "data": "List Brew"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "brew list"
+    },
+    {
+      "type": "text",
+      "data": "Check Outdated Packages"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "brew outdated"
+    },
+    {
+      "type": "text",
+      "data": "Updating Caskroom"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup"
+    },
+    {
+      "type": "text",
+      "data": "Casks Location"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "cd /usr/local/Caskroom\n//and is symlinked to:\n~/Applications depending on formula or /Applications\n//dmg installs most likely at: \n/Applications"
+    }
+  ]
+}

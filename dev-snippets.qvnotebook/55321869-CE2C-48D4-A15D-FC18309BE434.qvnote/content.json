@@ -1,0 +1,84 @@
+{
+  "title": "Gulp Guide ",
+  "cells": [
+    {
+      "type": "text",
+      "data": "&nbsp;Install Gulp"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "sudo npm install gulp -g"
+    },
+    {
+      "type": "text",
+      "data": "npm install : uses Node Package Manager (npm) to install Gulp<div>-g flag : install globally&nbsp;</div><div><br></div><div><br></div><div>Creating a Gulp Project</div>"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "# ... from within our project folder\n$ npm init"
+    },
+    {
+      "type": "text",
+      "data": "npm init creates package.json which stores info about the project and dependencies used<div><br><div><span style=\"color: rgb(221, 221, 221);\"><br></span></div><div><span style=\"color: rgb(221, 221, 221);\">Install Gulp to the Project</span><br></div></div>"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "$ npm install gulp --save-dev"
+    },
+    {
+      "type": "text",
+      "data": "<div>We've added --save-dev, which tells the computer to add gulp as a dev dependency in package.json</div><div><br></div><div>--save will install your package and saves it in the package.json file as a devDependency</div><div><br></div><div>creates the node_modules directory</div><div><br></div>"
+    },
+    {
+      "type": "text",
+      "data": "Folder Structure"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "  |- app/\n      |- css/\n      |- fonts/\n      |- images/ \n      |- index.html\n      |- js/ \n      |- scss/\n  |- dist/\n  |- gulpfile.js\n  |- node_modules/\n  |- package.json"
+    },
+    {
+      "type": "text",
+      "data": "<div><br></div><div><span style=\"color: rgb(221, 221, 221);\">First Gulp Task</span><br></div>"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "var gulp = require('gulp');"
+    },
+    {
+      "type": "text",
+      "data": "<div>The require statement tells Node to look into thenode_modules folder for a package named gulp. Once the package is found, we assign its contents to the variable gulp.</div>"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "gulp.task('task-name', function() {\n  // Stuff here\n});"
+    },
+    {
+      "type": "text",
+      "data": "<p><code>task-name</code> refers to the name of the task, which would be used whenever you want to run a task in Gulp. You can also run the same task in the command line by writing&nbsp;<code>gulp task-name</code>.</p>\n"
+    },
+    {
+      "type": "text",
+      "data": "A Real Gulp Task"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "gulp.task('task-name', function () {\n  return gulp.src('source-files') // Get source files with gulp.src\n    .pipe(aGulpPlugin()) // Sends it through a gulp plugin\n    .pipe(gulp.dest('destination')) // Outputs the file in the destination folder\n})"
+    },
+    {
+      "type": "text",
+      "data": "<p><code>gulp.src</code> tells the Gulp task what files to use for the task, while <code>gulp.dest</code> tells Gulp where to output the files once the task is completed.</p>\n"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

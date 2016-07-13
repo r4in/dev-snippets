@@ -1,0 +1,9 @@
+{
+  "title": "Apple Guide",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgb(51, 51, 51); font-family: 'Source Code Pro', 'Courier New'; font-size: 15px; font-variant-ligatures: normal; font-variant-position: normal; font-variant-numeric: normal; font-variant-alternates: normal; font-variant-east-asian: normal; line-height: 15px; widows: 1; background-color: rgb(249, 249, 249);\">defaults write com.apple.finder AppleShowAllFiles YES</span>"
+    }
+  ]
+}

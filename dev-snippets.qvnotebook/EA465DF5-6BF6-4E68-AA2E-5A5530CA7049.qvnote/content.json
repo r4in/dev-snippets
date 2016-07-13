@@ -1,0 +1,21 @@
+{
+  "title": "Site Performance Guide",
+  "cells": [
+    {
+      "type": "text",
+      "data": "Site Performance"
+    },
+    {
+      "type": "markdown",
+      "data": "http://www.webpagetest.org \n\npeople perceive tasks as faster or slower when there’s at least a 20% time differ- ence. \n\nfind average weights - httparchive.org \n\npage budget:\n\n* HTML – 60kb\n* CSS – 58kb\n* JavaScript – 29kb\n* Images – 117kb\n* Web fonts – 57kb"
+    },
+    {
+      "type": "markdown",
+      "data": "**Creative Manifesto**\n\n**Visual Inventory**\n\nwe need to present a high fidelity mockup in a short time. but how to do that?\n\n**Design Collage**\n\n**Atomic Web Design**\n\n23 http://bradfrost.com/blog/post/atomic-web-design/"
+    },
+    {
+      "type": "text",
+      "data": "<br><div><div class=\"page\" title=\"Page 42\"><div class=\"section\"><div class=\"layoutArea\"><div class=\"column\">\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div></div>"
+    }
+  ]
+}

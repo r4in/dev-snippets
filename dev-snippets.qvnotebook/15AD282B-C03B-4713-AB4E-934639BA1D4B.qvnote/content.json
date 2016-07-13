@@ -1,0 +1,18 @@
+{
+  "title": "r4in Boilerplate",
+  "cells": [
+    {
+      "type": "text",
+      "data": "Structure"
+    },
+    {
+      "type": "code",
+      "language": "php",
+      "data": "  |- app/\n      |- css/\n      |- fonts/\n      |- images/ \n      |- index.html\n      |- js/ \n      |- scss/\n  |- dist/\n  |- gulpfile.js\n  |- node_modules/\n  |- package.json"
+    },
+    {
+      "type": "text",
+      "data": "app : dev environment<div><div>dist : for production site</div></div><div>gulpfile.js : your gulp configs</div><div>node_modules : contains the packages/modules</div><div>package.json : contains metadata about your app/site</div>"
+    }
+  ]
+}
